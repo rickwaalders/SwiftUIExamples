@@ -1,8 +1,8 @@
 //
-//  ElementsApp.swift
-//  Elements
+//  SwiftUIExamplespp.swift
+//  SwiftUIExamples
 //
-//  Created by Rick Waalders on 11/08/2023.
+//  Created by @rickwaalders on 11/08/2023.
 //
 
 import SwiftUI

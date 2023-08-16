@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EA0222F42A861508004A98B6 /* ElementsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0222F32A861508004A98B6 /* ElementsApp.swift */; };
+		EA0222F42A861508004A98B6 /* SwiftUIExamplesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0222F32A861508004A98B6 /* SwiftUIExamplesApp.swift */; };
 		EA0222F62A861508004A98B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0222F52A861508004A98B6 /* ContentView.swift */; };
 		EA0222F82A861509004A98B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA0222F72A861509004A98B6 /* Assets.xcassets */; };
 		EA0222FB2A861509004A98B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA0222FA2A861509004A98B6 /* Preview Assets.xcassets */; };
+		EA0223022A8616D9004A98B6 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0223012A8616D9004A98B6 /* ColorExtensions.swift */; };
+		EA0223042A861EB8004A98B6 /* GlassButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0223032A861EB8004A98B6 /* GlassButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EA0222F02A861508004A98B6 /* Elements.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elements.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA0222F32A861508004A98B6 /* ElementsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsApp.swift; sourceTree = "<group>"; };
+		EA0222F02A861508004A98B6 /* SwiftUIExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA0222F32A861508004A98B6 /* SwiftUIExamplesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExamplesApp.swift; sourceTree = "<group>"; };
 		EA0222F52A861508004A98B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EA0222F72A861509004A98B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA0222FA2A861509004A98B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EA0223012A8616D9004A98B6 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		EA0223032A861EB8004A98B6 /* GlassButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +39,7 @@
 		EA0222E72A861508004A98B6 = {
 			isa = PBXGroup;
 			children = (
-				EA0222F22A861508004A98B6 /* Elements */,
+				EA0222F22A861508004A98B6 /* SwiftUIExamples */,
 				EA0222F12A861508004A98B6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +47,22 @@
 		EA0222F12A861508004A98B6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EA0222F02A861508004A98B6 /* Elements.app */,
+				EA0222F02A861508004A98B6 /* SwiftUIExamples.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EA0222F22A861508004A98B6 /* Elements */ = {
+		EA0222F22A861508004A98B6 /* SwiftUIExamples */ = {
 			isa = PBXGroup;
 			children = (
-				EA0222F32A861508004A98B6 /* ElementsApp.swift */,
+				EA7E6A822A8AC12E005410EC /* Components */,
+				EA7E6A812A8AC128005410EC /* Utils */,
+				EA0222F32A861508004A98B6 /* SwiftUIExamplesApp.swift */,
 				EA0222F52A861508004A98B6 /* ContentView.swift */,
 				EA0222F72A861509004A98B6 /* Assets.xcassets */,
 				EA0222F92A861509004A98B6 /* Preview Content */,
 			);
-			path = Elements;
+			path = SwiftUIExamples;
 			sourceTree = "<group>";
 		};
 		EA0222F92A861509004A98B6 /* Preview Content */ = {
@@ -67,12 +73,28 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		EA7E6A812A8AC128005410EC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EA0223012A8616D9004A98B6 /* ColorExtensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EA7E6A822A8AC12E005410EC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EA0223032A861EB8004A98B6 /* GlassButtonView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EA0222EF2A861508004A98B6 /* Elements */ = {
+		EA0222EF2A861508004A98B6 /* SwiftUIExamples */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EA0222FE2A861509004A98B6 /* Build configuration list for PBXNativeTarget "Elements" */;
+			buildConfigurationList = EA0222FE2A861509004A98B6 /* Build configuration list for PBXNativeTarget "SwiftUIExamples" */;
 			buildPhases = (
 				EA0222EC2A861508004A98B6 /* Sources */,
 				EA0222ED2A861508004A98B6 /* Frameworks */,
@@ -82,9 +104,9 @@
 			);
 			dependencies = (
 			);
-			name = Elements;
+			name = SwiftUIExamples;
 			productName = Elements;
-			productReference = EA0222F02A861508004A98B6 /* Elements.app */;
+			productReference = EA0222F02A861508004A98B6 /* SwiftUIExamples.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +124,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EA0222EB2A861508004A98B6 /* Build configuration list for PBXProject "Elements" */;
+			buildConfigurationList = EA0222EB2A861508004A98B6 /* Build configuration list for PBXProject "SwiftUIExamples" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +137,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EA0222EF2A861508004A98B6 /* Elements */,
+				EA0222EF2A861508004A98B6 /* SwiftUIExamples */,
 			);
 		};
 /* End PBXProject section */
@@ -138,7 +160,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA0222F62A861508004A98B6 /* ContentView.swift in Sources */,
-				EA0222F42A861508004A98B6 /* ElementsApp.swift in Sources */,
+				EA0223042A861EB8004A98B6 /* GlassButtonView.swift in Sources */,
+				EA0222F42A861508004A98B6 /* SwiftUIExamplesApp.swift in Sources */,
+				EA0223022A8616D9004A98B6 /* ColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,8 +290,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Elements/Preview Content\"";
-				DEVELOPMENT_TEAM = 2J53SB3W5H;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIExamples/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -280,7 +304,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = rw.Elements;
+				PRODUCT_BUNDLE_IDENTIFIER = rw.SwiftUIExamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -295,8 +319,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Elements/Preview Content\"";
-				DEVELOPMENT_TEAM = 2J53SB3W5H;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIExamples/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -309,7 +333,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = rw.Elements;
+				PRODUCT_BUNDLE_IDENTIFIER = rw.SwiftUIExamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -320,7 +344,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EA0222EB2A861508004A98B6 /* Build configuration list for PBXProject "Elements" */ = {
+		EA0222EB2A861508004A98B6 /* Build configuration list for PBXProject "SwiftUIExamples" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EA0222FC2A861509004A98B6 /* Debug */,
@@ -329,7 +353,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EA0222FE2A861509004A98B6 /* Build configuration list for PBXNativeTarget "Elements" */ = {
+		EA0222FE2A861509004A98B6 /* Build configuration list for PBXNativeTarget "SwiftUIExamples" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EA0222FF2A861509004A98B6 /* Debug */,
